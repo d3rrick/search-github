@@ -10,11 +10,11 @@ import {Repo} from '../../models/repository-model'
 })
 export class ProfileComponent implements OnInit {
 
- private profile
- private repos
- private username:string
- private repoName:string
- private resp:any
+ public profile
+ public repos
+ public username:string
+ public repoName:string
+ public resp:any
 
 
     constructor(private profileservice:ProfileService) { 

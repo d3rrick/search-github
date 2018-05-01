@@ -13,7 +13,7 @@ export class ProfileService {
 results:Object[]; 
 repoArr:Repo[];
 public newArr;
-private username = ""
+public username = ""
 private clientid = './environmentsenvironment.env.clientid'
 private clientsecret = './environment.environment.env.clientsecret'
   constructor(private http:Http) { 

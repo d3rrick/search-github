@@ -17,7 +17,8 @@
 ### The development of this app relied on these aspects.
 + Generation of components, custom pipe and directives.
 + Generation of a service to make api calls to github.
-+ Use of promises to make asyncronous calls to the Api.
++ Use of promises to make asyncronous calls to the Api required data and create instances of classes.
++ creation of models i.e User and Repository model to pick 
 + Generation of access token from github and placing it in a .env file and hiding it using .gitignore file.
 
 ## Technologies Used
