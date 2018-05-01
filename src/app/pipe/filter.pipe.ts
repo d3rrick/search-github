@@ -17,21 +17,6 @@ export class FilterPipe implements PipeTransform{
 
     const toCompare = term.toLowerCase();
 
-
-    // this.resp = this.profileservice.searchRepo(this.repoName);
-
-    // for(let i=0;i<this.resp.length;i++){
-    //   var a = this.resp[i];
-
-    //   if(a.toUpperCase().indexOf(this.repoName.toUpperCase()) > -1){
-
-    //     }else{
-    //     }
-    //   }
- 
-  
-
-
     return items.filter(function (item: any) {
       for (let property in item) {
         if (item[property] === null) {
