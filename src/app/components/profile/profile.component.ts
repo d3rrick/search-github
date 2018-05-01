@@ -15,7 +15,7 @@ export class ProfileComponent implements OnInit {
  private username:string
  private repoName:string
  private resp:any
- foundRepo
+
 
     constructor(private profileservice:ProfileService) { 
       this.repos = []
@@ -27,7 +27,6 @@ export class ProfileComponent implements OnInit {
     
     this.profileservice.getProfileRepos().then((response)=>{
    	this.repos = response
-     console.log(this.repos)
    }) 
     
   }

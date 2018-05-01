@@ -13,8 +13,9 @@ import { HighlightDirective } from './directives/highlight.directive';
 
 
 const appRoutes:Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'user', component: ProfileComponent},
+   {path: '', redirectTo: 'home',pathMatch:'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'user', component: ProfileComponent}
 ]
 
 
