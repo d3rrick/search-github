@@ -1,27 +1,39 @@
-# GithubApp
+# Github users and Repository Search
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+## Github search website allows users to search for a GitHub username and the repositories that belong to a perticular user.
+#### By **Derrick** created on, 28.04.2018
 
-## Development server
+## Description
+### This website allows users to search for a GitHub username and the repositories that belong to a perticular user, see some basic information of that user eg number of followers, number of repositories and search repositories.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##Flow of the App.
+#### (ensure you are connected to the intenet as the application uses github api)
 
-## Code scaffolding
++ User enters the name of a github user.
++ A user is displayed with some basic information.
++ The user can also search repositories.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Development
+### The development of this app relied on these aspects.
++ Generation of components, custom pipe and directives.
++ Generation of a service to make api calls to github.
++ Use of promises to make asyncronous calls to the Api.
++ Generation of access token from github and placing it in a .env file and hiding it using .gitignore file.
 
-## Build
+## Technologies Used
++ Html
++ Css
++ Typescript
++ Angular
++ Git
++ Nodejs
++ Bootstrap v4
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## known bugs
+#### No known bugs
 
 ## Further help
-
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Licence
+MIT (c) 2017 [muriithi derrick](https://github.com/muriithiderro)
