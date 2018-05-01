@@ -21,7 +21,6 @@ export class ProfileComponent implements OnInit {
       this.repos = []
      
   }
-
   findProfile(){
   	this.profileservice.updateProfile(this.username)
   	this.profileservice.searchUser().then( response => this.profile =response);
