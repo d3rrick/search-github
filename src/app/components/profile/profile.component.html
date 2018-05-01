@@ -68,12 +68,11 @@
 									{{repoName}}
 									<ul class="list-group" *ngFor="let repo of repos|filter:repoName">
 										<li class="list-group-item d-flex justify-content-between align-items-center" [ngStyle]="{visibility:hidden}" >
-											 <p appHighlight>{{repo.name}}</p> 
+											<p appHighlight>{{repo.name}}</p>
 											<span class="badge badge-primary badge-pill">{{repo.created|date}}</span>
 											<a href="{{repo.url}}" target="_blank" class="btn btn-sm btn-success">View project</a>
 											<span >{{repo.description}}</span>
 										</li>
-										
 									</ul>
 								</div>
 							</div>
