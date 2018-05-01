@@ -17,17 +17,13 @@ public newArr;
 private username = ""
 private clientid = "3350722f63d68c2ab763"
 private clientsecret = "4427b8b9c1835d48eb7a9cc7f06b0f38c48928b1"
-
   constructor(private http:Http) { 
      this.results = [];
      this.newArr = [];
      this.username = "muriithiderro"
   }
-
   searchUser() {
-  
     let apiURL = "https://api.github.com/users/"+ this.username +"?client_id=" +this.clientid+ "&client_secret=" + this.clientsecret;
-
     return this.http.get(apiURL).map((response)=>response.json()).toPromise().then((item)=>{item
       return new User(
           item.login,
@@ -54,9 +50,6 @@ private clientsecret = "4427b8b9c1835d48eb7a9cc7f06b0f38c48928b1"
           item.following)
      }).catch((error)=>console.error(error));
 }
- 
-
-
 getProfileRepos(){
   let apiURL = "https://api.github.com/users/"+ this.username +"/repos?client_id=" +this.clientid+ "&client_secret=" + this.clientsecret;
 
@@ -66,23 +59,14 @@ getProfileRepos(){
           res[i].name, 
           res[i].html_url,
           res[i].downloads_url))
-
       }
       return this.repoArr
-      // return new Repo(
-      //    res.name,
-      //    res.html_url
-      //   )
-    }).catch((error)=>console.error(error))
-     
-  ;
+    }).catch((error)=>console.error(error));
 }
 updateProfile(username:string ){
   this.repoArr=[]
   this.newArr =[]
   this.username = username
-
-
 }
  searchRepo(x:string){
    this.newArr = []
@@ -91,12 +75,6 @@ updateProfile(username:string ){
         this.newArr.push(this.repoArr[j].name)
       }
       return this.newArr
-
-   
-
    }
-
  }
-
-
 }
