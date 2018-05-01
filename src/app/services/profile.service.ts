@@ -3,7 +3,6 @@ import {Http,Headers} from '@angular/http'
 
 import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/toPromise'
-
 import {User} from '../models/user-model'
 import {Repo} from '../models/repository-model'
 
@@ -15,8 +14,8 @@ results:Object[];
 repoArr:Repo[];
 public newArr;
 private username = ""
-private clientid = "3350722f63d68c2ab763"
-private clientsecret = "4427b8b9c1835d48eb7a9cc7f06b0f38c48928b1"
+private clientid = './environmentsenvironment.env.clientid'
+private clientsecret = './environment.environment.env.clientsecret'
   constructor(private http:Http) { 
      this.results = [];
      this.newArr = [];
@@ -35,6 +34,7 @@ private clientsecret = "4427b8b9c1835d48eb7a9cc7f06b0f38c48928b1"
           item.following_url,
           item.gists_url,
           item.starred_url,
+
           item.subscriptions_url,
           item.organizations_url,
           item.repos_url,
