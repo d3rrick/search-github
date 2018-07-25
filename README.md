@@ -1,13 +1,13 @@
 # Github users and Repository Search
 
-## Github search website allows users to search for a GitHub username and the repositories that belong to a perticular user.
-#### By **Derrick** created on, 28.04.2018
+Github search website allows users to search for a GitHub username and the repositories that belong to a perticular user.
+##### By **Derrick** created on, 28.04.2018
 
 ## Description
-### This website allows users to search for a GitHub username and the repositories that belong to a perticular user, see some basic information of that user eg number of followers, number of repositories and search repositories.
+This website allows users to search for a GitHub username and the repositories that belong to a perticular user, see some basic information of that user eg number of followers, number of repositories and search repositories.
 
-##Flow of the App.
-#### (ensure you are connected to the intenet as the application uses github api)
+## Flow of the App.
+**Ensure you are connected to the intenet as the application uses github api**
 
 + User enters the name of a github user.
 + A user is displayed with some basic information.
