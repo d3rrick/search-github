@@ -19,7 +19,7 @@ private clientsecret = './environment.environment.env.clientsecret'
   constructor(private http:Http) { 
      this.results = [];
      this.newArr = [];
-     this.username = "muriithiderro"
+     this.username = "derrick-gopher"
   }
   searchUser() {
     let apiURL = "https://api.github.com/users/"+ this.username +"?client_id=" +this.clientid+ "&client_secret=" + this.clientsecret;
